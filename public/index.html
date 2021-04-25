@@ -11,19 +11,32 @@
 	<title>sala de chats</title>
 </head>
 <body>
-	<div class="joinOuterContainer">
-		<div class="joinInnerContainer">
+	<div class='Container'>
+		<header></header>
+		<div class="logo">
+			<div class="ContainerLogo">
+				<img class='imageLogo' src='./css/logo.png' alt='kjfhksdjh' />
+			</div>
+		</div>
+		<div class="joinOuterContainer">
 			<main class="join-main">
-			<form action="chat.html">
-				<div class="form-control">
-					<label class="heading" for="username">Ingresa</label>
-					<input class="joinInput mt-20" type="text" name="username" id="username"
-					placeholder="Enter username..." required />
-				</div>
-				<input class="joinInput" type="text" name="room" id="room" placeholder="Ingresa la sala de chat" required />
-				<button type="submit" class="button mt-20">Ingresa</button>
-			</form>
+				<form  class='form' action="chat.html">
+					<div class="form-control">
+						<label class="heading" for="username">Ingresa</label>
+						<div class="ContainerInput">
+							<label class="textInput">Enter Username</label>
+							<input class="joinInput mt-20" type="text" name="username" id="username" required />
+						</div>
+					</div>
+					<div class="ContainerInput">
+						<label class="textInput">Ingresa la sala de chat</label>
+						<input class="joinInput" type="text" name="room" id="room" required />
+					</div>
+					<button type="submit" class="button mt-20">Ingresa</button>
+				</form>
 			</main>
 		</div>
+	</div>
 </body>
+
 </html>
