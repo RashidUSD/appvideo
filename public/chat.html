@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Chat</title>
+</head>
+<body>
+  <div class="outerContainer">
+    <div class="container">
+      <div class="infoBar">
+        <div class="leftInnerContainer">
+          <div id="output2"></div>
+          <img class="onlineIcon"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAAXNSR0IArs4c6QAAAExJREFUCB1jbPh/le3lx5tNDIwMcQwg8J9hkTi/eh0LWJCBoRwoAAPlQDEGJrhKmDCIBupmQuYjs5lAZiILgNlAMRaQRSAz4UZCLQcAIwYaiAejKoYAAAAASUVORK5CYII="
+            alt="online icon">
+          <h2 id="room-name"></h2>
+        </div>
+        <div class="rightInnerContainer">
+          <a href="index.html">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAHBJREFUGBmNkAEKwCAMA2VfGP2mrx3sOV2us6IymIXQGlNTW9zdhCqcZQm4dmelFUp+CZZa6sYpeUVIFyIixMqjCO51Wy5unQExuYSbSF5JASLqPsqRM21lOoWc89tagr3PSMgOiWlwnUeXWA/E78IfuAX270S3ydAAAAAASUVORK5CYII="
+              alt="close icon">
+          </a>
+        </div>
+      </div>
+      <div class="css-13azwyo messages">
+        <div class="chat-messages"></div>
+      </div>
+      <form id="form">
+        <input id="msg" class="input" type="text" placeholder='Escibe un mensaje' autocomplete="off" value="i">
+        <button  onClick="scroll(0)" type="submit" class="sendButton">Enviar</button>
+      </form>
+    </div>
+    <div class="textContainer">
+      <div>
+        <div class="ContainerActives">
+          <h1>Actualmente Activos</h1>
+        </div>
+        <div class="activeContainer">
+          <h2>
+            <div id="users" class="activeItem"><img class="iconUser" alt="Online Icon"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAAXNSR0IArs4c6QAAAExJREFUCB1jbPh/le3lx5tNDIwMcQwg8J9hkTi/eh0LWJCBoRwoAAPlQDEGJrhKmDCIBupmQuYjs5lAZiILgNlAMRaQRSAz4UZCLQcAIwYaiAejKoYAAAAASUVORK5CYII=">
+            </div>
+        </div>
+        </h2>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+    integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4=" crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
